@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pleasantvik | Portfolio Website</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" id="nav-toggle" class="navigation__checkbox">
+      <label for="nav-toggle" class="navigation__button ">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#home" class="navigation__link" target="_blank">Home</a></li>
+          <li class="navigation__item"><a href="#section-info" target="_blank" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#section-contact" class="navigation__link" target="_blank">Contact</a></li>
+          <li class="navigation__item"><a href="#section-portfolio" class="navigation__link" target="_blank">Portfolio</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link" target="_blank">Blog</a></li>
+        </ul>
+
+      </nav>
+    </div>
+
+    
+    <header class="header" id="home">
+      <div class="header__textbox">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Pleasantvic</span>
+          <span class="heading-primary--sub"
+            >Documenting my Programming Journey</span
+          >
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="section-info" id="section-info">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Meet Me</h2>
+        </div>
+
+        <div class="info">
+          <div class="info__content">
+            <h2 class="heading-secondary--2">
+              Web Developer, Tech Enthusiast and Content Creator
+            </h2>
+
+            <p class="paragraph">
+              Hey there, I'm Adedayo! I'm a passionate content creator and
+              developer from Nigeria. For the past 12 months, I've been teaching
+              myself to code and sharing my progress with the world. I'm a soil
+              scientist by training and I'm enthusiastic about learning new
+              things and sharing with the world.
+            </p>
+            <p class="paragraph">
+              I use my platform to document my coding journey and also talk
+              about diverse things that interest me
+            </p>
+
+            <a href="#section-about" class="btn btn--full">Learn more</a>
+            <a href="#section-contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+
+          <div>
+            <img src="img/me.jpg" alt="me" class="info__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <!-- SECTION ABOUT -->
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary u-color">What I Can Offer</h2>
+        </div>
+
+        <div class="feature">
+          <div class="feature-box u-margin-left">
+           <svg class="feature-box__icon">
+                  <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                </svg>
+            <h3 class="heading-tertiary">Web Developer</h3>
+            <p class="paragraph">
+              Building beautiful, functional & responsive sites. I'm currently
+              focusing on the front-end
+            </p>
+            <h3 class="heading-tertiary">Languages</h3>
+            <p class="paragraph">HTML, CSS, Sass(SCSS), Bootstrap, React</p>
+            <h3 class="heading-tertiary">Tools & Frameworks</h3>
+            <ul class="feature-box__list">
+              <li class="feature-box__item">VsCode</li>
+              <li class="feature-box__item">GitHub</li>
+            </ul>
+          </div>
+
+
+          <div class="feature-box">
+            <svg class="feature-box__icon">
+              <use xlink:href="img/sprite.svg#icon-camera"></use>
+            </svg>
+            <h3 class="heading-tertiary">Content Creator</h3>
+            <p class="paragraph">
+              Sharing my thoughts on tech, documenting my life as a person and
+              also my progress as a front end developer
+            </p>
+            <h3 class="heading-tertiary">Platforms</h3>
+            <ul class="feature-box__list">
+              <li class="feature-box__item"><a href="#" target="_blank">Instagram</a></li>
+              <li class="feature-box__item"><a href="#" target="_blank">Twitter</a></li>
+              <li class="feature-box__item"><a href="#" target="_blank">Youtube</a></li>
+            </ul>
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <svg class="feature-box__icon">
+              <use xlink:href="img/sprite.svg#icon-pencil1"></use>
+            </svg>
+            <h3 class="heading-tertiary">UI/UX Designer</h3>
+            <p class="paragraph">
+            Creating minimal designs that are visually appealing while remaining functional
+            </p>
+            <h3 class="heading-tertiary">Tools</h3>
+            <ul class="feature-box__list">
+              <li class="feature-box__item">Figma</li>
+              <li class="feature-box__item">Sketch</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD ROTATING -->
+
+      <section class="section-portfolio" id="section-portfolio">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Portfolio</h2>
+          <p class="paragraph"> These are the couples of projects that I worked on over the past 12 months of learning how to code</p>
+        </div>
+
+        <div class="card-box">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <svg class="feature-box__icon">
+                <use xlink:href="img/sprite.svg#icon-gamepad"></use>
+              </svg>
+
+              <h2 class="heading-tertiary">The guessing game</h2>
+              <p class="paragraph">Generates a random number, make a guess ,tells you if your guess is too high or low</p>
+              <h3 class="heading-tertiary">Tech Stack</h3>
+              <p class="paragraph">HTML, CSS, JavaScript</p>
+            </div>
+            <div class="card__side card__side--back">
+              <a href="https://pleasantnumberguesser.netlify.app/" class="btn btn--full card__link" target="_blank">Play Game</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <svg class="feature-box__icon">
+                <use xlink:href="img/sprite.svg#icon-typing"></use>
+              </svg>
+              
+              
+              <h2 class="heading-tertiary">Todo List</h2>
+              <p class="paragraph">This is a simple app that allows you to add, checkoff and delete various task</p>
+              <h3 class="heading-tertiary">Tech Stack</h3>
+              <p class="paragraph">HTML, Bootstrap, JavaScript</p>
+            </div>
+            <div class="card__side card__side--back">
+              <a href="https://pleasanttask.netlify.app/" class="btn btn--full card__link" target="_blank">Check it out</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <svg class="feature-box__icon">
+                <use xlink:href="img/sprite.svg#icon-dice"></use>
+              </svg>
+
+              <h2 class="heading-tertiary">The Pig Game</h2>
+              <p class="paragraph">A simple game for two players where die are rolled.First player to reach 100 wins</p>
+              <h3 class="heading-tertiary">Tech Stack</h3>
+              <p class="paragraph">HTML, CSS, JavaScript</p>
+            </div>
+            <div class="card__side card__side--back">
+              <a href="https://pleasantpig.netlify.app/" class="btn btn--full card__link" target="_blank">Play Game</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+
+      <section class="section-contact" id="section-contact">
+        <div class="row">
+          <div class="contact">
+            <div class="contact__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary u-center-text">Contact me</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    required
+                    id="name"
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    required
+                    id="email"
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+
+                </div>
+
+                <div class="form__group">
+                  <textarea name="message" id="message" cols="30" rows="10" class="form__textarea" placeholder="Message"></textarea>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--full u-center-text">Submit &rarr;</button>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="reach">
+          <h3 class="heading-tertiary u-center-text u-color u-margin-top">Other ways to reach me</h3>
+        <p class="paragraph u-center-text u-color">If you'd prefer to contact me via social media, please feel free to direct message me on any of the below platforms.</p>
+        </div>
+
+        <div class="social u-margin-bottom-neg">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://twitter.com/pleasantvik" class="social__link social__link--twitter">
+                <svg class="social__icon social__icon--twitter">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://instagram.com/quantum_grace" class="social__link social__link--instagram">
+                <svg class="social__icon social__icon--instagram">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://facebook.com/pleasantdayo" class="social__link social__link--facebook">
+                <svg class="social__icon social__icon--facebook">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://linkedin.com/in/adedayo-ayoola-1b265a143" class="social__link social__link--linkdn">
+                <svg class="social__icon social__icon--linkedn">
+                  <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://wa.me/2347037636419" class="social__link social__link--whatsapp">
+                <svg class="social__icon social__icon--whatsapp">
+                  <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+     <div class="footer__box">
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li class="footer__item">
+            <a href="#section-info" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#section-contact" class="footer__link">Contact</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a href="#section-portfolio" class="footer__link">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul class="social__list u-left-text">
+          <li class="social__item">
+            <a href="https://twitter.com/pleasantvik" class="social__link social__link--twitter">
+              
+              
+              <svg class="social__icon social__icon--twitter">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://instagram.com/quantum_grace" class="social__link social__link--instagram">
+              <svg class="social__icon social__icon--instagram">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+              <a href="https://facebook.com/pleasantdayo" class="social__link social__link--facebook">
+                <svg class="social__icon social__icon--facebook">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://linkedin.com/in/adedayo-ayoola-1b265a143" class="social__link social__link--linkdn">
+                <svg class="social__icon social__icon--linkedn">
+                  <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          <li class="social__item">
+            <a href="https://wa.me/2347037636419" class="social__link social__link--whatsapp">
+              <svg class="social__icon social__icon--whatsapp">
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+     </div>
+
+     <div class="footer__box">
+
+      <p class="footer__copyright">
+        Built by <a href="#" class="footer__link">Adedayo Victor</a> with
+        the help of Jonas Schmedtmann online course
+        <a
+          href="https://www.udemy.com/course/advanced-css-and-sass/"
+          class="footer__link"
+          target="_blank"
+          >Advanced css and Sass</a
+        >. Copyright &copy; by Ayoola Adedayo, April 2021.
+      </p>
+    </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

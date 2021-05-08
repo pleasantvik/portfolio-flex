@@ -1,0 +1,70 @@
+.social {
+  &__list {
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    // background-color: $color-grey-light-1;
+
+    &--twitter {
+      fill: $color-twitter;
+    }
+    &--linkedn {
+      fill: $color-linkedn;
+    }
+
+    &--instagram {
+      fill: $color-instagram;
+    }
+
+    &--facebook {
+      fill: $color-facebook;
+    }
+    &--whatsapp {
+      fill: $color-whatsapp;
+    }
+  }
+  &__item {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      margin-right: 4rem;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+    &:active {
+      transform: scale(1.1);
+    }
+    &--twitter {
+      color: $color-twitter;
+    }
+    &--linkedn {
+      color: $color-linkedn;
+    }
+    &--facebook {
+      color: $color-facebook;
+    }
+    &--instagram {
+      color: $color-instagram;
+    }
+    &--whatsapp {
+      color: $color-whatsapp;
+    }
+  }
+}
+
+.sociall {
+  text-align: left;
+}

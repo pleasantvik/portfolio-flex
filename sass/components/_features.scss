@@ -1,0 +1,60 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.feature-box {
+  background-color: $color-grey-light-1;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  margin-right: 2rem;
+  flex: 0 0 30%;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 3rem;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: $color-primary-light;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.05);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.5rem;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-grey-darker;
+
+      border-bottom: 1px solid $color-grey-darker;
+      transition: all 0.2s;
+    }
+
+    a:hover,
+    a:active {
+      text-decoration: none;
+      color: $color-primary;
+      border-bottom: 1px solid $color-primary;
+    }
+  }
+}
